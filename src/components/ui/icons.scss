@@ -1,0 +1,30 @@
+.icon {
+  margin-left: 20px;
+  width: 32px;
+  height: 32px;
+  background-color: transparent;
+  border: 1px solid $color-icons;
+
+  &__favourite {
+    position: absolute;
+    z-index: -1;
+    transition: 0.3s opacity ease-in-out;
+
+    &--hide {
+      opacity: 0;
+    }
+  }
+
+  &__favourite-filled {
+    opacity: 0;
+    transition: 0.3s opacity ease-in-out;
+
+    &--show {
+      opacity: 1;
+    }
+  }
+
+  &--added-to-fav {
+    border-color: $color-elements;
+  }
+}

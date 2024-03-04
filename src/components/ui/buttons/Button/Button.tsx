@@ -9,7 +9,7 @@ interface Props {
 
 export const Button: FC<Props> = ({ children, addedToCart }) => {
   const classes = classNames('button', {
-    'button--added-to-cart': true || addedToCart,
+    'button--added-to-cart': addedToCart,
   });
 
   return (
